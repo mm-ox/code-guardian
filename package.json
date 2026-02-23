@@ -1,0 +1,41 @@
+{
+  "name": "@code-guardian/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@nx/js": "22.5.2",
+    "@nx/nest": "^22.5.2",
+    "@nx/react": "^22.5.2",
+    "@nx/vite": "22.5.2",
+    "@nx/web": "22.5.2",
+    "@nx/webpack": "^22.5.2",
+    "@swc-node/register": "1.11.1",
+    "@swc/core": "1.15.8",
+    "@swc/helpers": "0.5.18",
+    "@tailwindcss/vite": "^4.2.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@vitest/ui": "^4.0.0",
+    "eslint": "^10.0.2",
+    "jiti": "2.4.2",
+    "jsdom": "~22.1.0",
+    "nx": "22.5.1",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^4.2.0",
+    "tslib": "^2.3.0",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.56.1",
+    "vite": "^7.0.0",
+    "vitest": "^4.0.0"
+  },
+  "packageManager": "pnpm@10.25.0",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

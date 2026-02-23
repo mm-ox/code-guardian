@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+  - libs/*
+
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - less
+  - nx
+  - unrs-resolver

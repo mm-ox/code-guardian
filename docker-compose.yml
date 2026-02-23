@@ -1,0 +1,39 @@
+services:
+  api:
+    build:
+      context: .
+      target: api
+    ports:
+      - '3000:3000'
+    environment:
+      - SCANNER_URL=http://scanner:3001
+    volumes:
+      - scan-data:/tmp/scans
+      - scan-reports:/tmp
+    depends_on:
+      - scanner
+    deploy:
+      resources:
+        limits:
+          memory: 200m
+
+  scanner:
+    build:
+      context: .
+      target: scanner
+    volumes:
+      - scan-data:/tmp/scans
+      - scan-reports:/tmp
+      - trivy-cache:/root/.cache/trivy
+
+  dashboard:
+    build:
+      context: .
+      target: dashboard
+    ports:
+      - '4200:80'
+
+volumes:
+  scan-data:
+  scan-reports:
+  trivy-cache:
